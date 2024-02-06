@@ -352,7 +352,7 @@ int tn5250_ssl_stream_init (Tn5250Stream *This)
 {
    int len;
    char methstr[5];
-   SSL_METHOD *meth=NULL;
+   const SSL_METHOD *meth=NULL;
    long flags = 0;
 
    TN5250_LOG(("tn5250_ssl_stream_init() entered.\n"));
@@ -528,7 +528,7 @@ int tn5250_ssl_stream_init (Tn5250Stream *This)
 int tn3270_ssl_stream_init (Tn5250Stream *This)
 {
    int len;
-   SSL_METHOD *meth=NULL;
+   const SSL_METHOD *meth=NULL;
    long flags = 0;
 
    TN5250_LOG(("tn3270_ssl_stream_init() entered.\n"));
